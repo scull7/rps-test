@@ -46,6 +46,10 @@ app.get('/blitz/insert', function (req, res, next) {
   })
 });
 
+app.get('/loaderio-9f92a625b142537e9921bec28f4b7066/', function (req, res) {
+  res.send(200, 'loaderio-9f92a625b142537e9921bec28f4b7066');
+});
+
 var port  = process.env.PORT || 3000
 app.listen(port);
 
