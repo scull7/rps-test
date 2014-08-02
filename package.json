@@ -1,0 +1,26 @@
+{
+  "name": "rps-test",
+  "version": "0.0.0",
+  "description": "A simple testing scenario to test requests per second.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scull7/rps-test.git"
+  },
+  "keywords": [
+    "test",
+    "rps"
+  ],
+  "author": "Nathan Sculli <scull7@gmail.com>",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/scull7/rps-test/issues"
+  },
+  "homepage": "https://github.com/scull7/rps-test",
+  "dependencies": {
+    "express": "^4.7.2"
+  }
+}
