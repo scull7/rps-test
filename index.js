@@ -19,6 +19,10 @@ app.get('/', function (req, res) {
   res.send('hello world');
 });
 
+app.get('/alive', function (req, res) {
+  res.send(200);
+});
+
 app.get('/blitz/insert', function (req, res, next) {
   var collection  = req.mongodb.collection('test_insert_speed'),
       pw          = new xkcd();
