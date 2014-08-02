@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/scull7/rps-test",
   "dependencies": {
-    "express": "^4.7.2"
+    "express": "^4.7.2",
+    "mongodb": "^1.4.8",
+    "xkcd-password": "^0.2.6"
   }
 }
