@@ -16,7 +16,7 @@ var express = require('express'),
 ;
 
 app.use(mongo);
-app.use(morgan('combined'));
+app.use(morgan('short'));
 
 app.get('/', function (req, res) {
   console.log('/');
