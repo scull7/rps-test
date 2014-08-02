@@ -23,6 +23,7 @@
   "dependencies": {
     "express": "^4.7.2",
     "mongodb": "^1.4.8",
+    "morgan": "^1.2.2",
     "xkcd-password": "^0.2.6"
   }
 }

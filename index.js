@@ -5,7 +5,8 @@ var express = require('express'),
     mongo   = require(__dirname + '/lib/mongo')({
       host: process.env.RPS_HOST,
       user: process.env.RPS_USER,
-      pass: process.env.RPS_PASS,
+      password: process.env.RPS_PASS,
+      port: process.env.RPS_PORT
     }),
     xkcdOpts  = {
       numWords: 4,
