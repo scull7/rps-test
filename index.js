@@ -1,4 +1,5 @@
 var express = require('express'),
+    morgan  = require('morgan'),
     app     = express(),
     xkcd    = require('xkcd-password'),
     mongo   = require(__dirname + '/lib/mongo')({
@@ -14,15 +15,16 @@ var express = require('express'),
 ;
 
 app.use(mongo);
+app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
   console.log('/');
-  res.send('hello world');
+  res.send('hello world').end();
 });
 
 app.get('/alive', function (req, res) {
   console.log('/alive');
-  res.send(200);
+  res.send(200).end();
 });
 
 app.get('/blitz/insert', function (req, res, next) {
