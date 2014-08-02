@@ -16,14 +16,17 @@ var express = require('express'),
 app.use(mongo);
 
 app.get('/', function (req, res) {
+  console.log('/');
   res.send('hello world');
 });
 
 app.get('/alive', function (req, res) {
+  console.log('/alive');
   res.send(200);
 });
 
 app.get('/blitz/insert', function (req, res, next) {
+  console.log('/blitz/insert');
   var collection  = req.mongodb.collection('test_insert_speed'),
       pw          = new xkcd();
   //insert a single document.
